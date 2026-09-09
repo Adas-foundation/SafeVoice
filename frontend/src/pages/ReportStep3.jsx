@@ -29,16 +29,62 @@ const ReportStep3 = ({ formData, updateField }) => {
             />
           </div>
         </div>
+
         <div className="space-y-2">
-          <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.describeTitle')}</label>
+          <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.whatHappenedLabel')}</label>
           <textarea
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00236f] focus:outline-none transition-all resize-none font-['Inter']"
-            placeholder={t('report.describePlaceholder')}
-            rows={6}
-            value={formData.description}
-            onChange={(e) => updateField('description', e.target.value)}
+            placeholder={t('report.whatHappenedPlaceholder')}
+            rows={3}
+            value={formData.whatHappened}
+            onChange={(e) => updateField('whatHappened', e.target.value)}
           ></textarea>
         </div>
+
+        <div className="space-y-2">
+          <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.beforeIncidentLabel')}</label>
+          <textarea
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00236f] focus:outline-none transition-all resize-none font-['Inter']"
+            placeholder={t('report.beforeIncidentPlaceholder')}
+            rows={3}
+            value={formData.beforeIncident}
+            onChange={(e) => updateField('beforeIncident', e.target.value)}
+          ></textarea>
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.whoElseLabel')}</label>
+          <textarea
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00236f] focus:outline-none transition-all resize-none font-['Inter']"
+            placeholder={t('report.whoElsePlaceholder')}
+            rows={2}
+            value={formData.whoElse}
+            onChange={(e) => updateField('whoElse', e.target.value)}
+          ></textarea>
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.afterIncidentLabel')}</label>
+          <textarea
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00236f] focus:outline-none transition-all resize-none font-['Inter']"
+            placeholder={t('report.afterIncidentPlaceholder')}
+            rows={2}
+            value={formData.afterIncident}
+            onChange={(e) => updateField('afterIncident', e.target.value)}
+          ></textarea>
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.additionalInfoLabel')}</label>
+          <textarea
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00236f] focus:outline-none transition-all resize-none font-['Inter']"
+            placeholder={t('report.additionalInfoPlaceholder')}
+            rows={2}
+            value={formData.additionalInfo}
+            onChange={(e) => updateField('additionalInfo', e.target.value)}
+          ></textarea>
+        </div>
+
         <div className="space-y-2">
           <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.threatQuestion')}</label>
           <div className="flex gap-4">
