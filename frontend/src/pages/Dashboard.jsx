@@ -125,7 +125,7 @@ const Dashboard = () => {
   return (
     <div className="flex">
       <AdminSidebar />
-      <main className="ml-64 flex-1 max-w-7xl mx-auto px-4 md:px-8 py-8 text-slate-900">
+      <main className="lg:ml-64 flex-1 max-w-7xl mx-auto px-4 pt-24 pb-8 md:px-8 lg:pt-8 text-slate-900">
         {error && (
           <div className="mb-6 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
             {error}

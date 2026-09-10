@@ -78,7 +78,7 @@ const Contact = () => {
       <section className="relative py-20 px-4 md:px-10 bg-[#00236f] text-white overflow-hidden">
         <div className="max-w-[1280px] mx-auto relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-[48px] leading-[56px] font-[700] mb-6 font-['Poppins']">
+            <h1 className="text-[36px] leading-[44px] sm:text-[42px] sm:leading-[50px] lg:text-[48px] lg:leading-[56px] font-[700] mb-6 font-['Poppins']">
               {t('contact.heroTitle')}
             </h1>
             <p className="text-[18px] leading-[28px] text-white/80 mb-8 font-['Inter']">

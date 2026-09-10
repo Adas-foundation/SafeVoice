@@ -19,7 +19,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="flex-1">
               <span className="text-[#006a63] font-bold tracking-widest uppercase text-[12px] mb-4 block font-['Inter']">{t('about.official')}</span>
-              <h2 className="text-[48px] leading-[56px] font-[700] text-[#00236f] mb-6 font-['Poppins']">{t('about.heroTitle')}</h2>
+              <h2 className="text-[34px] leading-[42px] sm:text-[40px] sm:leading-[48px] lg:text-[48px] lg:leading-[56px] font-[700] text-[#00236f] mb-6 font-['Poppins']">{t('about.heroTitle')}</h2>
               <p className="text-[18px] leading-[28px] text-gray-600 mb-8 max-w-2xl font-['Inter']">{t('about.heroSubtitle')}</p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/report" className="bg-[#00236f] text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all font-['Poppins']">{t('about.reportCase')}</Link>
@@ -250,7 +250,7 @@ const About = () => {
       <section className="py-24 bg-[#00236f] overflow-hidden relative">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#00236f_0%,rgba(15,118,110,0.3)_100%)] opacity-50"></div>
         <div className="max-w-[1280px] mx-auto px-4 md:px-10 text-center relative z-10">
-          <h3 className="text-[48px] leading-[56px] text-white mb-8 max-w-3xl mx-auto font-['Poppins']">{t('about.ctaTitle')}</h3>
+          <h3 className="text-[32px] leading-[40px] sm:text-[40px] sm:leading-[48px] lg:text-[48px] lg:leading-[56px] text-white mb-8 max-w-3xl mx-auto font-['Poppins']">{t('about.ctaTitle')}</h3>
           <p className="text-[18px] text-white/80 mb-12 max-w-2xl mx-auto font-['Inter']">{t('about.ctaText')}</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/report" className="bg-[#006a63] text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-transform font-['Poppins']">{t('about.getStarted')}</Link>

@@ -158,8 +158,8 @@ export default function CaseManagement() {
   return (
     <div className="flex">
       <AdminSidebar />
-      <main className="ml-64 flex-1 min-h-screen bg-background text-on-surface font-body-md">
-        <header className="sticky top-0 bg-surface-container-lowest z-40 border-b border-outline-variant px-margin-desktop py-6">
+      <main className="lg:ml-64 flex-1 min-h-screen bg-background text-on-surface font-body-md pt-16 lg:pt-0">
+        <header className="sticky top-16 lg:top-0 bg-surface-container-lowest z-40 border-b border-outline-variant px-margin-mobile lg:px-margin-desktop py-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
               <h2 className="font-headline-md text-headline-md text-primary font-semibold">Case Management</h2>
@@ -228,7 +228,7 @@ export default function CaseManagement() {
           </div>
         </header>
 
-        <div className="p-margin-desktop flex-1">
+        <div className="p-margin-mobile lg:p-margin-desktop flex-1">
           <div className="bg-white rounded-2xl shadow-sm border border-outline-variant overflow-hidden">
             {loading ? (
               <div className="flex items-center justify-center py-24 text-on-surface-variant">
@@ -350,7 +350,7 @@ export default function CaseManagement() {
           </div>
         </div>
 
-        <footer className="mt-auto bg-primary text-on-primary px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-base">
+        <footer className="mt-auto bg-primary text-on-primary px-margin-mobile lg:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-base">
           <div className="text-center md:text-left">
             <span className="font-title-lg text-title-lg font-bold block mb-1">SafeReport Malawi</span>
             <p className="font-body-md text-body-md text-on-primary/80">© 2024 Ministry of Gender, Community Development and Social Welfare - Government of Malawi</p>

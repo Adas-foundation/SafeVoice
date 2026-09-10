@@ -117,7 +117,7 @@ const Emergency = () => {
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           {/* SOS Trigger Area */}
           <div className="lg:col-span-7 flex flex-col items-center text-center py-4">
-            <h2 className="text-[48px] leading-[56px] mb-4 text-[#00236f] font-[700] font-['Poppins']">{t('emergency.heroTitle')}</h2>
+            <h2 className="text-[34px] leading-[42px] sm:text-[42px] sm:leading-[50px] lg:text-[48px] lg:leading-[56px] mb-4 text-[#00236f] font-[700] font-['Poppins']">{t('emergency.heroTitle')}</h2>
             <p className="text-[18px] text-gray-600 max-w-xl mb-8 font-['Inter']">{t('emergency.heroSubtitle')}</p>
             <div className="relative group">
               <div className="sos-pulse absolute inset-0 bg-[#ba1a1a]/20 rounded-full animate-pulse"></div>
