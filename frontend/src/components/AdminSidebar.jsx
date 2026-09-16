@@ -87,7 +87,7 @@ export default function AdminSidebar() {
       <header className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between bg-[#041c40] px-4 text-white shadow-2xl lg:hidden">
         <div>
           <h1 className="text-lg font-bold leading-tight">Admin Portal</h1>
-          <p className="text-xs text-slate-300 opacity-80">SafeReport Malawi</p>
+          <img src="/logo.png" alt="SafeReport Malawi" className="mt-1.5 h-9 w-9 rounded-full bg-white p-0.5" />
         </div>
         <button
           type="button"
@@ -121,7 +121,7 @@ export default function AdminSidebar() {
         <div className="mb-6 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-white">Admin Portal</h1>
-            <p className="text-sm text-slate-300 opacity-80">SafeReport Malawi</p>
+            <img src="/logo.png" alt="SafeReport Malawi" className="mt-2 h-14 w-14 rounded-full bg-white p-1" />
           </div>
           <button
             type="button"
@@ -139,7 +139,7 @@ export default function AdminSidebar() {
       <aside className="hidden lg:flex h-screen w-56 fixed left-0 top-0 bg-[#041c40] text-slate-100 shadow-2xl flex-col p-6 z-40 transition-all duration-200 ease-in-out">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-white">Admin Portal</h1>
-          <p className="text-sm text-slate-300 opacity-80">SafeReport Malawi</p>
+          <img src="/logo.png" alt="SafeReport Malawi" className="mt-2 h-14 w-14 rounded-full bg-white p-1" />
         </div>
         <SidebarBody onNavigate={() => {}} />
       </aside>

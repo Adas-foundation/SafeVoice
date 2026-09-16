@@ -142,7 +142,7 @@ const Dashboard = () => {
           <section className="space-y-8">
             <header className="bg-white p-6 rounded-[28px] shadow-sm flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div>
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-500 font-medium">Admin Portal · SafeReport Malawi</p>
+                <p className="text-sm uppercase tracking-[0.24em] text-slate-500 font-medium">Admin Portal</p>
                 <h1 className="mt-3 text-3xl md:text-4xl font-semibold text-[#00236f]">Welcome back, {firstName}</h1>
                 <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
                   Here is an overview of the current response status in Malawi. Review the latest reports, alerts, and district activity in one place.

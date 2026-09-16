@@ -352,8 +352,13 @@ export default function CaseManagement() {
 
         <footer className="mt-auto bg-primary text-on-primary px-margin-mobile lg:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-base">
           <div className="text-center md:text-left">
+<<<<<<< HEAD
             <span className="font-title-lg text-title-lg font-bold block mb-1">SafeReport Malawi</span>
             <p className="font-body-md text-body-md text-on-primary/80">© 2024 Adas Foundation, Community Development and Social Welfare - Government of Malawi</p>
+=======
+            <img src="/logo.png" alt="SafeReport Malawi" className="h-14 w-14 rounded-full bg-white p-1 mx-auto md:mx-0" />
+            <p className="mt-2 font-body-md text-body-md text-on-primary/80">© 2024 Ada's Foundation - Government of Malawi</p>
+>>>>>>> b448af5543cc61c39c23a1f88e8e73916528d0cb
           </div>
           <div className="flex gap-gutter">
             <a className="hover:text-on-primary transition-colors font-body-md text-body-md text-on-primary/80" href="/resources">Privacy Policy</a>
