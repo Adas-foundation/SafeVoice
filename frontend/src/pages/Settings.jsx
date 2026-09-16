@@ -396,7 +396,7 @@ export default function Settings() {
 
         <footer className="mt-auto bg-primary text-on-primary p-gutter">
           <div className="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-base">
-            <p className="font-body-md text-on-primary/80">© 2024 Ministry of Gender, Community Development and Social Welfare - Government of Malawi</p>
+            <p className="font-body-md text-on-primary/80">© 2024 Ada's Foundation - Government of Malawi</p>
             <div className="flex gap-gutter">
               <a className="hover:text-on-primary transition-colors" href="/resources">Privacy Policy</a>
               <a className="hover:text-on-primary transition-colors" href="/contact">Help Desk</a>

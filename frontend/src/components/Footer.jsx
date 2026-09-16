@@ -6,12 +6,7 @@ const Footer = () => {
     <footer className="bg-[#00236f] text-white w-full mt-auto">
       <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-8 gap-4 w-full max-w-[1280px] mx-auto">
         <div className="flex flex-col items-center md:items-start gap-4 w-full">
-          <div className="flex items-center gap-3">
-            <span className="text-[20px] text-white font-bold font-['Poppins']">{t('footer.name')}</span>
-            <span className="h-6 w-[1px] bg-white/30"></span>
-            <span className="text-[14px] opacity-80 font-['Inter']">{t('footer.country')}</span>
-          </div>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 flex-wrap w-full">
+         <div className="flex flex-col md:flex-row justify-between items-center gap-6 flex-wrap w-full">
             <span className="text-[14px] text-white/80 font-['Inter']">
               {t('footer.ministry')}
             </span>

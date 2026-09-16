@@ -54,14 +54,10 @@ const Navbar = () => {
       <div className="relative z-50 flex justify-between items-center px-4 md:px-8 py-3 w-full max-w-7xl mx-auto">
         <div className="flex items-center gap-3">
           <img
-            alt="Malawi Government Crest"
-            className="h-10 w-auto"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDki8aAv-XLN2kUR3bF2q1pl191097fA7sC47WWQvMbrZFTdO4PucHRqySrq9LmD1dD70RZj8wrxVadguQsfclg2S_Bz5t-FyDVyVsRsD8GCegtzLLPE3jgu7nMSAl_OpodhGt7qikGuZoii-vEBFn6nOPne2XkeZwmPFy59hyvmf1Du9gbOfwGkJud5gRNfYE5mBm0sIuOKgq7NpdOIBza6mbrGK-BnKFcryNzh8iuDGcJek5vH3pUZU5kIwMMztjBhJ1xgq7Zkg"
+            alt="SafeReport Malawi"
+            className="h-14 w-14 object-contain"
+            src="/logo.png"
           />
-          <div className="hidden md:block">
-            <span className="text-lg font-semibold text-[#00236f] block leading-tight font-['Poppins']">Ministry of Gender</span>
-            <span className="text-xs text-gray-600 tracking-wider font-['Inter']">SafeReport Malawi</span>
-          </div>
         </div>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map(({ to, key }) => (

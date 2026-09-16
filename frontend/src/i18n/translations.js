@@ -22,7 +22,7 @@ export const translations = {
     footer: {
       name: 'SafeReport',
       country: 'Republic of Malawi',
-      ministry: '© 2026 Ministry of Gender, Community Development and Social Welfare',
+      ministry: '© 2026 Ada\u2019s Foundation',
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       help: 'Help Desk',
@@ -503,7 +503,7 @@ export const translations = {
     footer: {
       name: 'SafeReport',
       country: 'Republic of Malawi',
-      ministry: '© 2026 Unduna wa Za Akazi, Chitukuko ndi Ufulu wa Anthu',
+      ministry: '© 2026 Ada\u2019s Foundation',
       privacy: 'Ndondomeko ya Chinsinsi',
       terms: 'Malamulo Otsatira',
       help: 'Thandizo',
