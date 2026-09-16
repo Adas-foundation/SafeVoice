@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 flex-wrap w-full">
             <span className="text-[14px] text-white/80 font-['Inter']">
-              {t('footer.ministry')}
+              Adas Foundation &copy; {new Date().getFullYear()}. {t('footer.rights')}
             </span>
             <nav className="flex flex-wrap gap-6 justify-center">
               <a className="text-white/80 font-['Inter'] hover:text-white hover:underline transition-colors" href="/resources">{t('footer.privacy')}</a>

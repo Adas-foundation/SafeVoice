@@ -6,3 +6,4 @@ export function useLanguage() {
   if (!ctx) throw new Error('useLanguage must be used within a LanguageProvider')
   return ctx
 }
+

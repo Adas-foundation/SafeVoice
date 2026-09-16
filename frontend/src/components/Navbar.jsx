@@ -17,7 +17,7 @@ const Navbar = () => {
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDki8aAv-XLN2kUR3bF2q1pl191097fA7sC47WWQvMbrZFTdO4PucHRqySrq9LmD1dD70RZj8wrxVadguQsfclg2S_Bz5t-FyDVyVsRsD8GCegtzLLPE3jgu7nMSAl_OpodhGt7qikGuZoii-vEBFn6nOPne2XkeZwmPFy59hyvmf1Du9gbOfwGkJud5gRNfYE5mBm0sIuOKgq7NpdOIBza6mbrGK-BnKFcryNzh8iuDGcJek5vH3pUZU5kIwMMztjBhJ1xgq7Zkg"
           />
           <div className="hidden md:block">
-            <span className="text-lg font-semibold text-[#00236f] block leading-tight font-['Poppins']">Ministry of Gender</span>
+            <span className="text-lg font-semibold text-[#00236f] block leading-tight font-['Poppins']">Adas Foundation</span>
             <span className="text-xs text-gray-600 tracking-wider font-['Inter']">SafeReport Malawi</span>
           </div>
         </div>
