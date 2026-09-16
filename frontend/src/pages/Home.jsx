@@ -35,7 +35,7 @@ const Home = () => {
               </div>
               <LanguageSwitcher />
             </div>
-            <h1 className="text-[48px] leading-[56px] font-[700] text-[#00236f] font-['Poppins']">
+            <h1 className="text-[30px] leading-[38px] sm:text-[38px] sm:leading-[46px] lg:text-[48px] lg:leading-[56px] font-[700] text-[#00236f] font-['Poppins']">
               {t('home.heroTitle')}<span className="text-[#006a63]">{t('home.heroTitleAccent')}</span>
             </h1>
             <p className="text-[18px] leading-[28px] text-gray-600 max-w-2xl font-['Inter']">
@@ -88,22 +88,22 @@ const Home = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white border border-gray-300 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
               <span className="material-symbols-outlined text-[#00236f] text-4xl mb-4">analytics</span>
-              <p className="text-[48px] font-[700] text-[#00236f] font-['Poppins']">{formatCompact(stats?.totalCases)}</p>
+              <p className="text-[30px] leading-none sm:text-[38px] lg:text-[48px] font-[700] text-[#00236f] font-['Poppins']">{formatCompact(stats?.totalCases)}</p>
               <p className="text-[14px] text-gray-600 uppercase font-['Inter']">{t('home.casesReported')}</p>
             </div>
             <div className="bg-white border border-gray-300 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
               <span className="material-symbols-outlined text-[#006a63] text-4xl mb-4">check_circle</span>
-              <p className="text-[48px] font-[700] text-[#00236f] font-['Poppins']">{formatCompact(stats?.resolved)}</p>
+              <p className="text-[30px] leading-none sm:text-[38px] lg:text-[48px] font-[700] text-[#00236f] font-['Poppins']">{formatCompact(stats?.resolved)}</p>
               <p className="text-[14px] text-gray-600 uppercase font-['Inter']">{t('home.casesResolved')}</p>
             </div>
             <div className="bg-white border border-gray-300 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
               <span className="material-symbols-outlined text-[#f6be39] text-4xl mb-4">location_on</span>
-              <p className="text-[48px] font-[700] text-[#00236f] font-['Poppins']">{formatCompact(stats?.districtCount)}</p>
+              <p className="text-[30px] leading-none sm:text-[38px] lg:text-[48px] font-[700] text-[#00236f] font-['Poppins']">{formatCompact(stats?.districtCount)}</p>
               <p className="text-[14px] text-gray-600 uppercase font-['Inter']">{t('home.districtOffices')}</p>
             </div>
             <div className="bg-white border border-gray-300 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
               <span className="material-symbols-outlined text-[#ba1a1a] text-4xl mb-4">electric_bolt</span>
-              <p className="text-[48px] font-[700] text-[#00236f] font-['Poppins']">24/7</p>
+              <p className="text-[30px] leading-none sm:text-[38px] lg:text-[48px] font-[700] text-[#00236f] font-['Poppins']">24/7</p>
               <p className="text-[14px] text-gray-600 uppercase font-['Inter']">{t('home.emergencyResponse')}</p>
             </div>
           </div>
@@ -201,7 +201,7 @@ const Home = () => {
               <h4 className="text-[20px] font-[500] font-bold leading-tight text-[#00236f]">{t('home.psychTitle')}</h4>
             </div>
             {/* Emergency Shelter */}
-            <div className="md:col-span-6 md:row-span-1 bg-[#dee9fc] p-6 rounded-3xl flex items-center justify-between">
+            <div className="md:col-span-6 md:row-span-1 bg-[#dee9fc] p-6 rounded-3xl flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-[#00236f]">holiday_village</span>
                 <h4 className="text-[20px] font-[500] font-bold text-[#00236f]">{t('home.shelterTitle')}</h4>
@@ -219,7 +219,7 @@ const Home = () => {
             {/* Background texture/pattern simulation */}
             <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
             <div className="relative z-10 space-y-8 max-w-3xl mx-auto">
-              <h2 className="text-[48px] leading-[56px] font-[700] font-['Poppins']">{t('home.ctaTitle')}<br/>{t('home.ctaTitle2')}</h2>
+              <h2 className="text-[32px] leading-[40px] sm:text-[40px] sm:leading-[48px] lg:text-[48px] lg:leading-[56px] font-[700] font-['Poppins']">{t('home.ctaTitle')}<br/>{t('home.ctaTitle2')}</h2>
               <p className="text-[18px] leading-[28px] opacity-80 font-['Inter']">{t('home.ctaText')}</p>
               <div className="flex flex-wrap justify-center gap-6 pt-4">
                 <Link 

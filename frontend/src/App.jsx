@@ -3,7 +3,6 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Resources from './pages/Resources'
 import Emergency from './pages/Emergency'
 import Report from './pages/Report'
 import Track from './pages/Track'
@@ -42,7 +41,6 @@ function App() {
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resources" element={<Resources />} />
           <Route path="/emergency" element={<Emergency />} />
           <Route path="/report" element={<Report />} />
           <Route path="/track" element={<Track />} />

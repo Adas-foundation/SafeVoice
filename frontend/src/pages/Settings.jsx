@@ -114,8 +114,8 @@ export default function Settings() {
   return (
     <div className="flex">
       <AdminSidebar />
-      <main className="ml-64 min-h-screen flex-1 bg-background text-on-surface font-body-md">
-        <header className="sticky top-0 bg-surface-container-lowest/80 backdrop-blur-md z-30 px-margin-desktop py-4 flex justify-between items-center shadow-sm">
+      <main className="lg:ml-64 min-h-screen flex-1 bg-background text-on-surface font-body-md pt-16 lg:pt-0">
+        <header className="sticky top-16 lg:top-0 bg-surface-container-lowest/80 backdrop-blur-md z-30 px-margin-mobile lg:px-margin-desktop py-4 flex flex-wrap justify-between items-center gap-3 shadow-sm">
           <div>
             <h2 className="font-headline-md text-headline-md font-semibold text-primary">System Settings</h2>
             <nav className="flex items-center gap-2 text-label-md text-on-surface-variant mt-1" aria-label="breadcrumb">
@@ -143,7 +143,7 @@ export default function Settings() {
           </div>
         </header>
 
-        <div className="p-margin-desktop grid grid-cols-12 gap-gutter max-w-container-max mx-auto w-full">
+        <div className="p-margin-mobile lg:p-margin-desktop grid grid-cols-12 gap-gutter max-w-container-max mx-auto w-full">
           {saveError && (
             <div className="col-span-12 rounded-xl border border-error/30 bg-error-container/20 p-4 text-error flex items-center gap-3">
               <span className="material-symbols-outlined">error</span>
@@ -396,7 +396,7 @@ export default function Settings() {
 
         <footer className="mt-auto bg-primary text-on-primary p-gutter">
           <div className="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-base">
-            <p className="font-body-md text-on-primary/80">© 2024 Ministry of Gender, Community Development and Social Welfare - Government of Malawi</p>
+            <p className="font-body-md text-on-primary/80">© 2024 Adas Foundation, Community Development and Social Welfare - Government of Malawi</p>
             <div className="flex gap-gutter">
               <a className="hover:text-on-primary transition-colors" href="/resources">Privacy Policy</a>
               <a className="hover:text-on-primary transition-colors" href="/contact">Help Desk</a>

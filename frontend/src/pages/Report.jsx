@@ -18,7 +18,7 @@ const initialFormData = {
   victimPhone: '',
   incidentDate: '',
   incidentTime: '',
-  description: '',
+  whatHappened: '',
   immediateThreat: '',
   districtId: null,
   landmark: '',
@@ -58,7 +58,7 @@ const Report = () => {
       return t('report.errorStep2')
     }
     if (step === 3) {
-      if (!formData.incidentDate || !formData.incidentTime || !formData.description.trim()) {
+      if (!formData.incidentDate || !formData.incidentTime || !formData.whatHappened.trim()) {
         return t('report.errorStep3')
       }
       if (!formData.immediateThreat) {
@@ -253,7 +253,7 @@ const Report = () => {
         {currentStep === 5 && <ReportStep5 formData={formData} updateField={updateField} />}
 
         {/* Navigation Buttons */}
-        <div className="flex items-center justify-between mt-12">
+        <div className="flex flex-wrap items-center justify-between gap-4 mt-12">
           <button
             className={`flex items-center gap-2 px-8 py-3 border-2 border-[#00236f] text-[#00236f] font-semibold rounded-xl hover:bg-[#1e3a8a]/10 transition-all font-['Inter'] ${currentStep === 1 ? 'invisible' : ''}`}
             type="button"

@@ -116,9 +116,9 @@ spacing:
 
 ## Brand & Style
 
-The brand identity is rooted in the concepts of **Stability, Protection, and Compassion**. As a government initiative for the Ministry of Gender, the visual language must command authority while remaining highly accessible to citizens in distress. 
+The brand identity is rooted in the concepts of **Stability, Protection, and Compassion**. As a government initiative for the Adas Foundation, the visual language must command authority while remaining highly accessible to citizens in distress. 
 
-The design style is **Corporate / Modern**, characterized by a refined balance of institutional rigor and human-centric warmth. We utilize generous white space to reduce cognitive load during high-stress reporting scenarios, ensuring the interface feels calm and orderly. The Ministry of Gender coat of arms serves as the ultimate anchor of legitimacy, positioned prominently to instill confidence and verify the platform's official status.
+The design style is **Corporate / Modern**, characterized by a refined balance of institutional rigor and human-centric warmth. We utilize generous white space to reduce cognitive load during high-stress reporting scenarios, ensuring the interface feels calm and orderly. The Adas Foundation coat of arms serves as the ultimate anchor of legitimacy, positioned prominently to instill confidence and verify the platform's official status.
 
 ## Colors
 
@@ -186,4 +186,4 @@ The shape language is defined by **significant roundedness** to evoke a sense of
 - **Danger/Urgent:** Red background (10% opacity) with Red text.
 
 ### Ministry Header
-- A clean, white top bar containing the Ministry of Gender Coat of Arms on the left. The text "Ministry of Gender" should be in Poppins Semibold, 14px, next to the crest.
+- A clean, white top bar containing the Adas Foundation Coat of Arms on the left. The text "Adas Foundation" should be in Poppins Semibold, 14px, next to the crest.

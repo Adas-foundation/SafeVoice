@@ -167,8 +167,8 @@ const UserManagement = () => {
   return (
     <div className="flex">
       <AdminSidebar />
-      <main className="ml-64 min-h-screen bg-[#f8f9ff] text-slate-900">
-      <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-8">
+      <main className="lg:ml-64 min-h-screen bg-[#f8f9ff] text-slate-900">
+      <div className="max-w-[1280px] mx-auto px-4 pt-24 pb-8 md:px-8 lg:pt-8">
         <header className="mb-8 rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
           <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
             <div>
@@ -414,7 +414,7 @@ const UserManagement = () => {
 
       {modalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/50 p-4" role="dialog" aria-modal="true">
-          <div className="w-full max-w-md rounded-[28px] bg-white p-8 shadow-2xl">
+          <div className="w-full max-w-md max-h-[90vh] overflow-y-auto rounded-[28px] bg-white p-8 shadow-2xl">
             <div className="mb-6 flex items-center justify-between">
               <h2 className="text-2xl font-semibold text-[#00236f]">{editingUser ? 'Edit User' : 'Add New User'}</h2>
               <button

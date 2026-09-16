@@ -14,7 +14,7 @@ const ReportStep3 = ({ formData, updateField }) => {
       <div className="space-y-6">
         <div className="space-y-2">
           <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.whenHappened')}</label>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00236f] focus:outline-none transition-all font-['Inter']"
               type="date"
@@ -87,7 +87,7 @@ const ReportStep3 = ({ formData, updateField }) => {
 
         <div className="space-y-2">
           <label className="text-[14px] text-gray-800 font-['Inter']">{t('report.threatQuestion')}</label>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             {THREAT_OPTIONS.map((option) => (
               <button
                 key={option.value}

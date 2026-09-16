@@ -102,8 +102,8 @@ const Analytics = () => {
   return (
     <div className="flex">
       <AdminSidebar />
-      <main className="ml-64 min-h-screen bg-[#f8f9ff] text-slate-900">
-      <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-8">
+      <main className="lg:ml-64 min-h-screen bg-[#f8f9ff] text-slate-900">
+      <div className="max-w-[1280px] mx-auto px-4 pt-24 pb-8 md:px-8 lg:pt-8">
         <header className="mb-8 rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="space-y-2">

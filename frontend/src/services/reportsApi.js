@@ -141,7 +141,7 @@ export function buildDescription(formData) {
 
   lines.push('')
   lines.push('Description:')
-  lines.push(formData.description || '(none provided)')
+  lines.push(formData.whatHappened || '(none provided)')
 
   return lines.join('\n')
 }

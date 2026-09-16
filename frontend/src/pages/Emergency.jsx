@@ -31,9 +31,9 @@ const Emergency = () => {
   }
 
   const getCurrentPosition = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       if (!navigator.geolocation) {
-        reject(new Error('Geolocation is not supported by this browser.'))
+        resolve(null)
         return
       }
       navigator.geolocation.getCurrentPosition(
@@ -42,7 +42,7 @@ const Emergency = () => {
           longitude: position.coords.longitude,
           accuracy: position.coords.accuracy,
         }),
-        () => reject(new Error('Unable to access your location. Please enable location services and try again.')),
+        () => resolve(null),
         { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
       )
     })
@@ -50,7 +50,15 @@ const Emergency = () => {
 
   const sendSosAlert = async (source) => {
     const coords = await getCurrentPosition()
-    return createSosAlert({ ...coords, source })
+    const storedUser = JSON.parse(localStorage.getItem('safereport_user') || 'null')
+    return createSosAlert({
+      ...(coords || {}),
+      timestamp: new Date().toISOString(),
+      userId: storedUser?.id || null,
+      message: sosMessage.trim() || undefined,
+      deviceInfo: `${navigator.platform || 'unknown'}; ${navigator.userAgent}`,
+      source,
+    })
   }
 
   const triggerSOS = async () => {
@@ -59,6 +67,7 @@ const Emergency = () => {
     setSendingSos(true)
     try {
       await sendSosAlert('sos')
+      setSosMessage(t('emergency.sosSentText'))
       setSosActive(true)
     } catch (err) {
       console.error('Failed to send SOS', err)
@@ -117,11 +126,13 @@ const Emergency = () => {
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           {/* SOS Trigger Area */}
           <div className="lg:col-span-7 flex flex-col items-center text-center py-4">
-            <h2 className="text-[48px] leading-[56px] mb-4 text-[#00236f] font-[700] font-['Poppins']">{t('emergency.heroTitle')}</h2>
+            <h2 className="text-[34px] leading-[42px] sm:text-[42px] sm:leading-[50px] lg:text-[48px] lg:leading-[56px] mb-4 text-[#00236f] font-[700] font-['Poppins']">{t('emergency.heroTitle')}</h2>
             <p className="text-[18px] text-gray-600 max-w-xl mb-8 font-['Inter']">{t('emergency.heroSubtitle')}</p>
             <div className="relative group">
               <div className="sos-pulse absolute inset-0 bg-[#ba1a1a]/20 rounded-full animate-pulse"></div>
               <button 
+                type="button"
+                disabled={sendingSos}
                 className="relative w-64 h-64 md:w-80 md:h-80 bg-[#ba1a1a] rounded-full shadow-2xl flex flex-col items-center justify-center text-white hover:bg-[#ba1a1a]/90 active:scale-95 transition-all border-8 border-white/10"
                 onMouseDown={handleMouseDown}
                 onMouseUp={handleMouseUp}
@@ -134,6 +145,18 @@ const Emergency = () => {
                 <span className="text-[14px] mt-2 opacity-80 uppercase tracking-widest font-['Inter']">{sendingSos ? t('emergency.transmitting') : t('emergency.hold')}</span>
               </button>
             </div>
+            <label className="w-full max-w-md text-left text-sm font-semibold text-gray-700" htmlFor="sos-message">
+              Add a short message (optional)
+              <textarea
+                id="sos-message"
+                value={sosMessage}
+                onChange={(event) => setSosMessage(event.target.value)}
+                maxLength={240}
+                rows={2}
+                placeholder="Tell responders what is happening"
+                className="mt-2 w-full rounded-xl border border-gray-300 bg-white p-3 font-normal focus:outline-none focus:ring-2 focus:ring-[#00236f]/20"
+              />
+            </label>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <button 
                 className="flex items-center gap-2 px-8 py-4 bg-[#d9e3f6] border border-gray-300 rounded-xl font-bold text-gray-800 hover:bg-gray-200 transition-colors font-['Inter'] disabled:opacity-60 disabled:cursor-not-allowed"
@@ -239,7 +262,7 @@ const Emergency = () => {
             <div className="w-12 h-12 bg-[#00236f]/10 rounded-full flex items-center justify-center mb-4 text-[#00236f] group-hover:scale-110 transition-transform">
               <span className="material-symbols-outlined">local_police</span>
             </div>
-            <h4 className="text-[20px] font-[500] font-bold font-['Poppins']">{t('emergency.callPolice')}</h4>
+            <h4 className="text-[20px] font-bold font-['Poppins']">{t('emergency.callPolice')}</h4>
             <p className="text-gray-600 text-sm mb-4 font-['Inter']">{t('emergency.callPoliceText')}</p>
             <span className="text-[#00236f] font-bold text-lg font-['Poppins']">997</span>
           </a>
@@ -248,7 +271,7 @@ const Emergency = () => {
             <div className="w-12 h-12 bg-[#ba1a1a]/10 rounded-full flex items-center justify-center mb-4 text-[#ba1a1a] group-hover:scale-110 transition-transform">
               <span className="material-symbols-outlined">medical_services</span>
             </div>
-            <h4 className="text-[20px] font-[500] font-bold font-['Poppins']">{t('emergency.callAmbulance')}</h4>
+            <h4 className="text-[20px] font-bold font-['Poppins']">{t('emergency.callAmbulance')}</h4>
             <p className="text-gray-600 text-sm mb-4 font-['Inter']">{t('emergency.callAmbulanceText')}</p>
             <span className="text-[#ba1a1a] font-bold text-lg font-['Poppins']">998</span>
           </a>
@@ -257,7 +280,7 @@ const Emergency = () => {
             <div className="w-12 h-12 bg-[#006a63]/10 rounded-full flex items-center justify-center mb-4 text-[#006a63] group-hover:scale-110 transition-transform">
               <span className="material-symbols-outlined">roofing</span>
             </div>
-            <h4 className="text-[20px] font-[500] font-bold font-['Poppins']">{t('emergency.safeHouse')}</h4>
+            <h4 className="text-[20px] font-bold font-['Poppins']">{t('emergency.safeHouse')}</h4>
             <p className="text-gray-600 text-sm mb-4 font-['Inter']">{t('emergency.safeHouseText')}</p>
             <span className="text-[#006a63] font-bold text-sm underline font-['Inter']">{t('emergency.findOnMap')}</span>
           </a>
@@ -266,7 +289,7 @@ const Emergency = () => {
             <div className="w-12 h-12 bg-[#533c00]/20 rounded-full flex items-center justify-center mb-4 text-[#261a00] group-hover:scale-110 transition-transform">
               <span className="material-symbols-outlined">hospital</span>
             </div>
-            <h4 className="text-[20px] font-[500] font-bold font-['Poppins']">{t('emergency.hospital')}</h4>
+            <h4 className="text-[20px] font-bold font-['Poppins']">{t('emergency.hospital')}</h4>
             <p className="text-gray-600 text-sm mb-4 font-['Inter']">{t('emergency.hospitalText')}</p>
             <span className="text-[#261a00] font-bold text-sm underline font-['Inter']">{t('emergency.findOnMap')}</span>
           </a>
