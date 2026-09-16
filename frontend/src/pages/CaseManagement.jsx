@@ -236,10 +236,10 @@ export default function CaseManagement() {
                 Loading cases...
               </div>
             ) : (
-              <div className="overflow-x-auto">
+              <div className="max-h-[calc(100vh-25rem)] overflow-y-auto overflow-x-auto">
                 <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="bg-surface-container-low border-b border-outline-variant">
+                  <thead className="sticky top-0 z-10 bg-surface-container-low">
+                    <tr className="border-b border-outline-variant">
                       <th scope="col" className="px-6 py-4 font-semibold text-on-surface-variant text-sm">Case ID</th>
                       <th scope="col" className="px-6 py-4 font-semibold text-on-surface-variant text-sm">Victim</th>
                       <th scope="col" className="px-6 py-4 font-semibold text-on-surface-variant text-sm">Type</th>
@@ -259,7 +259,7 @@ export default function CaseManagement() {
                     {pageItems.map((c) => {
                       const parsed = parseReportDescription(c.description)
                       return (
-                        <tr key={c.id} className="hover:bg-surface-bright transition-colors group" onClick={() => handleViewDetails(c)}>
+                        <tr key={c.id} className="border-b border-outline-variant odd:bg-white even:bg-surface-container-low/50 hover:bg-surface-bright transition-colors group" onClick={() => handleViewDetails(c)}>
                           <td className="px-6 py-4">
                             <span className="font-mono font-bold text-primary">{c.referenceNumber}</span>
                           </td>
@@ -352,13 +352,8 @@ export default function CaseManagement() {
 
         <footer className="mt-auto bg-primary text-on-primary px-margin-mobile lg:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-base">
           <div className="text-center md:text-left">
-<<<<<<< HEAD
             <span className="font-title-lg text-title-lg font-bold block mb-1">SafeReport Malawi</span>
             <p className="font-body-md text-body-md text-on-primary/80">© 2024 Adas Foundation, Community Development and Social Welfare - Government of Malawi</p>
-=======
-            <img src="/logo.png" alt="SafeReport Malawi" className="h-14 w-14 rounded-full bg-white p-1 mx-auto md:mx-0" />
-            <p className="mt-2 font-body-md text-body-md text-on-primary/80">© 2024 Ada's Foundation - Government of Malawi</p>
->>>>>>> b448af5543cc61c39c23a1f88e8e73916528d0cb
           </div>
           <div className="flex gap-gutter">
             <a className="hover:text-on-primary transition-colors font-body-md text-body-md text-on-primary/80" href="/resources">Privacy Policy</a>

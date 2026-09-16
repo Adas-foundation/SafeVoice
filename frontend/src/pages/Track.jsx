@@ -274,7 +274,7 @@ const Track = () => {
                 <a className="flex items-center gap-3 font-bold bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-all font-['Inter']" href="tel:+265111">
                   <span className="material-symbols-outlined">call</span> {t('track.call')}
                 </a>
-                <a className="w-full flex items-center gap-3 font-bold bg-[#006a63] text-white p-3 rounded-lg shadow-md hover:opacity-90 active:scale-95 transition-all font-['Inter']" href="mailto:support@gender.gov.mw">
+                <a className="w-full flex items-center gap-3 font-bold bg-[#006a63] text-white p-3 rounded-lg shadow-md hover:opacity-90 active:scale-95 transition-all font-['Inter']" href="mailto:support@adasfoundation.mw">
                   <span className="material-symbols-outlined">chat_bubble</span> {t('track.chat')}
                 </a>
               </div>

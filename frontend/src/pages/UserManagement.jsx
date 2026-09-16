@@ -453,7 +453,7 @@ const UserManagement = () => {
                   onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
                   required
                   className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm focus:border-[#00236f] focus:ring-2 focus:ring-[#00236f]/10 focus:outline-none"
-                  placeholder="name@gender.gov.mw"
+                  placeholder="name@adasfoundation.mw"
                 />
               </div>
               <div className="space-y-2">

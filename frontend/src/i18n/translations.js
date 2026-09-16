@@ -22,11 +22,7 @@ export const translations = {
     footer: {
       name: 'SafeReport',
       country: 'Republic of Malawi',
-<<<<<<< HEAD
       ministry: '© 2026 Adas Foundation, Community Development and Social Welfare',
-=======
-      ministry: '© 2026 Ada\u2019s Foundation',
->>>>>>> b448af5543cc61c39c23a1f88e8e73916528d0cb
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       help: 'Help Desk',
@@ -58,7 +54,7 @@ export const translations = {
       step4Text: 'Receive medical, legal, or psychological support through our partner network.',
       servicesTitle: 'Comprehensive Support Services',
       servicesSubtitle:
-        'The Ministry offers a wide array of specialised services to ensure the holistic safety and recovery of all citizens.',
+        'Adas Foundation offers a wide array of specialised services to ensure the holistic safety and recovery of all citizens.',
       viewAll: 'View All Services',
       anonymousTitle: 'Anonymous Reporting',
       anonymousText: 'Your identity is protected by state-of-the-art encryption. Report without fear of disclosure.',
@@ -277,7 +273,7 @@ export const translations = {
       safetyTitle: 'Safety First',
       safetyText:
         'Your tracking reference number is your key to this case. Do not share it with anyone, including friends or family, to ensure your safety and confidentiality.',
-      protocol: 'Ministry Protection Protocol 2024',
+      protocol: 'Adas Foundation Protection Protocol 2024',
       needHelp: 'Need Help?',
       needHelpText: 'If you have questions about your status or feel unsafe, our coordinators are here 24/7.',
       call: 'Call 111 (Toll-Free)',
@@ -376,7 +372,7 @@ export const translations = {
       secureEncryption: 'Secure Encryption',
       secureText: 'All reports are strictly confidential and encrypted.',
       mandateTitle: 'Our Institutional Mandate',
-      missionTitle: 'Ministry Mission Statement',
+      missionTitle: 'Adas Foundation Mission Statement',
       missionText:
         '"To promote social and economic empowerment of women, girls, and vulnerable populations through gender-responsive programming and the provision of high-quality community development and social welfare services to the people of Malawi."',
       digitalPurpose: 'Digital Purpose',
@@ -403,7 +399,7 @@ export const translations = {
       primaryPartner: 'Primary Partner',
       policeText: 'Direct integration with the Victim Support Unit (VSU) for rapid response and criminal investigations.',
       viewProtocol: 'View Protocol',
-      healthTitle: 'Ministry of Health',
+      healthTitle: 'Adas Foundation Health Team',
       healthLiaison: 'Health Liaison',
       healthText: 'Ensuring immediate medical attention and forensic evidence collection for survivors.',
       serviceDir: 'Service Directory',
@@ -452,7 +448,7 @@ export const translations = {
       faqAnonymousQ: 'Is my report truly anonymous?',
       faqAnonymousA: 'Yes. SafeReport Malawi uses encrypted protocols. You are not required to provide your name or contact information to file a report. We do not track IP addresses for anonymous submissions.',
       faqAfterQ: 'What happens after I submit a report?',
-      faqAfterA: 'Your report is instantly routed to a trained case officer at the Ministry. They assess the urgency and coordinate with local law enforcement or social services as needed. You can track progress using your unique Report ID.',
+      faqAfterA: 'Your report is instantly routed to a trained case officer at Adas Foundation. They assess the urgency and coordinate with local law enforcement or social services as needed. You can track progress using your unique Report ID.',
       faqDataQ: 'How is my data secured?',
       faqDataA: 'We use bank-level encryption (AES-256) for all data at rest and in transit. Access to sensitive case information is strictly audited and limited to authorized personnel only.',
       helplinesTitle: 'Quick Support Helplines',
@@ -470,7 +466,7 @@ export const translations = {
       loginTitle: 'Admin Login',
       loginText: 'Access the centralized reporting dashboard.',
       emailLabel: 'Official Email Address',
-      emailPlaceholder: 'name@gender.gov.mw',
+      emailPlaceholder: 'name@adasfoundation.mw',
       passwordLabel: 'Password',
       forgotPassword: 'Forgot Password?',
       rememberDevice: 'Remember this device for 30 days',
@@ -943,7 +939,7 @@ export const translations = {
       gbvHelplineText: 'Thandizo lachinsinsi kwa opulumuka mu nkhanza zokhudzana ndi jenda.',
     },
     login: {
-      ministryTitle: 'Unduna wa Za Akazi',
+      ministryTitle: 'Adas Foundation',
       portalTitle: 'Nsanja Yoyang\u2019anira SafeReport',
       intro: 'Kutsimikizira chitetezo ndi moyo wabwino wa nzika zonse kudzera mukuyang\u2019anira zochitika ndi ndondomeko zozikidwa pa deta.',
       secureInfra: 'National Infrastructure Yachitetezo',
@@ -951,7 +947,7 @@ export const translations = {
       loginTitle: 'Kulowa Kwa Admin',
       loginText: 'Lowani pa dashibodi ya lipoti.',
       emailLabel: 'Adilesi Yofukira ya Boma',
-      emailPlaceholder: 'name@gender.gov.mw',
+      emailPlaceholder: 'name@adasfoundation.mw',
       passwordLabel: 'Pasiwodi',
       forgotPassword: 'Muyiwala Pasiwodi?',
       rememberDevice: 'Kumbukirani chipangizo chino kwa masiku 30',

@@ -100,7 +100,7 @@ export default function Login() {
                 type="email"
                 autoComplete="username"
                 required
-                placeholder="name@gender.gov.mw"
+                placeholder="name@adasfoundation.mw"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-[15px] text-gray-900 placeholder:text-gray-400 focus:border-[#00236f] focus:ring-[3px] focus:ring-[#00236f]/12 outline-none transition-all"

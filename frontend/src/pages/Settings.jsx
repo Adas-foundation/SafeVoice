@@ -18,7 +18,7 @@ export default function Settings() {
   const [platformName, setPlatformName] = useState('SafeReport Malawi')
   const [timezone, setTimezone] = useState('Central Africa Time (CAT) - UTC+2')
   const [language, setLanguage] = useState('English (UK)')
-  const [contactEmail, setContactEmail] = useState('support@gender.gov.mw')
+  const [contactEmail, setContactEmail] = useState('support@adasfoundation.mw')
 
   const [twoFA, setTwoFA] = useState(true)
   const [sessionTimeout, setSessionTimeout] = useState(30)
@@ -42,7 +42,7 @@ export default function Settings() {
         setPlatformName(s.platform_name || 'SafeReport Malawi')
         setTimezone(s.timezone || 'Central Africa Time (CAT) - UTC+2')
         setLanguage(s.language || 'English (UK)')
-        setContactEmail(s.contact_email || 'support@gender.gov.mw')
+        setContactEmail(s.contact_email || 'support@adasfoundation.mw')
         setTwoFA(s.two_fa !== 'false')
         setSessionTimeout(s.session_timeout != null ? Number(s.session_timeout) : 30)
         setPasswordExpiry(s.password_expiry != null ? Number(s.password_expiry) : 90)
@@ -229,7 +229,7 @@ export default function Settings() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="font-label-md text-on-surface">Contact Support Email</label>
-                  <input className="rounded-lg border-outline-variant focus:border-primary focus:ring-2 focus:ring-primary/20 bg-white transition-all py-3" placeholder="support@gender.gov.mw" type="email" value={contactEmail} onChange={(e) => setContactEmail(e.target.value)} />
+                  <input className="rounded-lg border-outline-variant focus:border-primary focus:ring-2 focus:ring-primary/20 bg-white transition-all py-3" placeholder="support@adasfoundation.mw" type="email" value={contactEmail} onChange={(e) => setContactEmail(e.target.value)} />
                 </div>
               </div>
             </section>
@@ -379,7 +379,7 @@ export default function Settings() {
                       <span className="material-symbols-outlined text-on-surface-variant">medical_services</span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-on-surface">Ministry of Health</h4>
+                      <h4 className="font-bold text-on-surface">Adas Foundation</h4>
                       <p className="text-label-sm text-secondary">Connected • API v1.1</p>
                     </div>
                   </div>
@@ -396,11 +396,7 @@ export default function Settings() {
 
         <footer className="mt-auto bg-primary text-on-primary p-gutter">
           <div className="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-base">
-<<<<<<< HEAD
             <p className="font-body-md text-on-primary/80">© 2024 Adas Foundation, Community Development and Social Welfare - Government of Malawi</p>
-=======
-            <p className="font-body-md text-on-primary/80">© 2024 Ada's Foundation - Government of Malawi</p>
->>>>>>> b448af5543cc61c39c23a1f88e8e73916528d0cb
             <div className="flex gap-gutter">
               <a className="hover:text-on-primary transition-colors" href="/resources">Privacy Policy</a>
               <a className="hover:text-on-primary transition-colors" href="/contact">Help Desk</a>

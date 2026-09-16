@@ -214,7 +214,7 @@ const About = () => {
                 {t('about.viewProtocol')} <span className="material-symbols-outlined">arrow_forward</span>
               </a>
             </div>
-            {/* Ministry of Health */}
+            {/* Adas Foundation Health Team */}
             <div className="bg-white p-8 rounded-3xl border border-gray-300 hover:shadow-lg transition-shadow">
               <div className="mb-6 flex items-center justify-between">
                 <div className="w-16 h-16 bg-[#eff4ff] flex items-center justify-center rounded-2xl">

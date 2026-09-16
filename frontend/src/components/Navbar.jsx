@@ -54,13 +54,10 @@ const Navbar = () => {
             className="h-14 w-14 object-contain"
             src="/logo.png"
           />
-<<<<<<< HEAD
           <div className="hidden md:block">
             <span className="text-lg font-semibold text-[#00236f] block leading-tight font-['Poppins']">Adas Foundation</span>
             <span className="text-xs text-gray-600 tracking-wider font-['Inter']">SafeReport Malawi</span>
           </div>
-=======
->>>>>>> b448af5543cc61c39c23a1f88e8e73916528d0cb
         </div>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map(({ to, key }) => (
