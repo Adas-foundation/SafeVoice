@@ -23,5 +23,8 @@ export class EmergencySosController {
     return this.emergencySosService.findOne(id);
   }
 
-
+  @Post('alert')
+createAlert(@Body() createEmergencySosDto: CreateEmergencySosDto) {
+  return this.emergencySosService.create(createEmergencySosDto);
+}
 }
