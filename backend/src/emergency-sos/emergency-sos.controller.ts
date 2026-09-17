@@ -22,4 +22,6 @@ export class EmergencySosController {
   findOne(@Param('id') id: string) {
     return this.emergencySosService.findOne(id);
   }
+
+
 }
