@@ -29,7 +29,7 @@ export const translations = {
       contact: 'Contact Us',
     },
     home: {
-      official: 'Official Government Portal',
+      official: 'Safe Voice Portal',
       heroTitle: 'Protecting Every Citizen Through ',
       heroTitleAccent: 'Safe Digital Reporting',
       heroSubtitle:
