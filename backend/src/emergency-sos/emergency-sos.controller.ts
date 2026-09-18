@@ -22,4 +22,9 @@ export class EmergencySosController {
   findOne(@Param('id') id: string) {
     return this.emergencySosService.findOne(id);
   }
+
+  @Post('alert')
+createAlert(@Body() createEmergencySosDto: CreateEmergencySosDto) {
+  return this.emergencySosService.create(createEmergencySosDto);
+}
 }
